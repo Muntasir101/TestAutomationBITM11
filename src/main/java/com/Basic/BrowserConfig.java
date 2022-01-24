@@ -9,10 +9,12 @@ public class BrowserConfig {
 
     public static void main(String[] args) throws InterruptedException {
          chrome_launch();
+         open_website();
          small_wait();
          chrome_close();
-         small_wait();
+
          firefox_launch();
+         open_website();
          small_wait();
          firefox_close();
     }
@@ -20,7 +22,7 @@ public class BrowserConfig {
     public static void chrome_launch(){
         //Browser launch (Chrome)
         //dynamic path for browser driver(best)
-          System.setProperty("webdriver.chrome.driver","./src/main/resources/chromedriver.exe"); //2 argument = key , value
+         System.setProperty("webdriver.chrome.driver","./src/main/resources/chromedriver.exe"); //2 argument = key , value
          driver = new ChromeDriver();  //ChromeDriver=interface
 
         //static path for browser driver
@@ -41,5 +43,10 @@ public class BrowserConfig {
     public static void small_wait() throws InterruptedException {
         Thread.sleep(3000);
     }
+
+    public static void open_website(){
+        driver.get("https://google.com");
+    }
+
 
 }

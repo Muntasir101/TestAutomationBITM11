@@ -8,15 +8,15 @@ public class BrowserConfig {
    public static WebDriver driver; //driver=reference variable ; WebDriver=interface
 
     public static void main(String[] args) throws InterruptedException {
-         chrome_launch();
-         open_website();
-         small_wait();
-         chrome_close();
+//         chrome_launch();
+//         open_website();
+//         small_wait();
+//         chrome_close();
 
          firefox_launch();
-         open_website();
-         small_wait();
-         firefox_close();
+//         open_website();
+//         small_wait();
+//         firefox_close();
     }
 
     public static void chrome_launch(){

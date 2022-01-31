@@ -7,7 +7,9 @@ import org.openqa.selenium.devtools.v85.log.Log;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class UserLoginTest {
+
     public static WebDriver driver;
+
     public static void main(String[] args) {
         firefox_launch();
         open_website();
@@ -19,6 +21,7 @@ public class UserLoginTest {
         System.setProperty("webdriver.gecko.driver","./src/main/resources/geckodriver.exe");
         driver=new FirefoxDriver();
     }
+
     public static void open_website(){
         driver.get("https://demo.guru99.com/V4/index.php");
     }

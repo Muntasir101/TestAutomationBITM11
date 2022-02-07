@@ -1,0 +1,12 @@
+com\Basic\BasicCommands.class
+com\Basic\DropDown.class
+com\Basic\BrowserConfig.class
+com\Basic\Screenshots.class
+com\Base\BaseClass.class
+com\Basic\NavigationTest.class
+com\Basic\TitleUrlVerification.class
+com\Basic\JSAlert.class
+com\Basic\iFrames.class
+com\Basic\MultipleWindow.class
+com\Basic\BasicAuth.class
+com\Login\UserLogin.class

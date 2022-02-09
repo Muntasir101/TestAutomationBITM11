@@ -1,12 +1,14 @@
 package com.Basic;
 
+import com.Base.BaseClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class TitleUrlVerification {
-    public static WebDriver driver;
+import java.io.IOException;
 
-    public static void main(String[] args) {
+public class TitleUrlVerification extends BaseClass {
+
+    public static void main(String[] args) throws IOException {
         firefox_launch();
         open_website();
         title_test();
@@ -23,7 +25,7 @@ public class TitleUrlVerification {
     }
 
     //Title Verification
-    public static void title_test(){
+    public static void title_test() throws IOException {
         String Expected_title="gooGlE";
         String Actual_title= driver.getTitle();
 
@@ -32,6 +34,7 @@ public class TitleUrlVerification {
         }
         else {
             System.out.println("Title Mis-Matched.Test failed");
+            capture_Screenshot("TitleMismatch");
         }
     }
 

@@ -1,9 +1,15 @@
 package com.Base;
 
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import java.io.File;
+import java.io.IOException;
 
 //Parent Class
 public class BaseClass {
@@ -45,6 +51,13 @@ public class BaseClass {
         Thread.sleep(milliSeconds);
     }
 
+    public static void capture_Screenshot(String imageName) throws IOException {
+        //Step 1: Take Screenshot
+        File SrcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
+        //Step 2 and 3: Save image
+        FileUtils.copyFile(SrcFile,new File("./Screenshots/"+imageName+".png"),true);
+    }
 
 
 }

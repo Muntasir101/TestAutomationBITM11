@@ -21,6 +21,7 @@ public class DropDown extends BaseClass {
 
         List<WebElement> options=dropDown.getOptions();
         int size=options.size();
+        System.out.println(size);
         for(int i=0; i<size;i++){
             String opt=options.get(i).getText();
             System.out.println(opt);

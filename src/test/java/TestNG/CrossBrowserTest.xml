@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Login Test Suite">
+
+    <test name="Login Valid Test - Chrome">
+        <parameter name="BrowserName" value="chrome"></parameter>
+        <classes>
+            <class name="TestNG.CrossBrowserTest"></class>
+        </classes>
+    </test>
+
+    <test name="Login Invalid Test - Chrome">
+        <parameter name="BrowserName" value="chrome"></parameter>
+        <classes>
+            <class name="TestNG.CrossBrowserTest2"></class>
+        </classes>
+    </test>
+
+    <test name="Login Valid Test - Firefox">
+        <parameter name="BrowserName" value="firefox"></parameter>
+        <classes>
+            <class name="TestNG.CrossBrowserTest"></class>
+        </classes>
+    </test>
+
+    <test name="Login inValid Test - Firefox">
+        <parameter name="BrowserName" value="firefox"></parameter>
+        <classes>
+            <class name="TestNG.CrossBrowserTest2"></class>
+        </classes>
+    </test>
+
+
+</suite>

@@ -40,7 +40,7 @@ public class LoginTest {
         Pass.sendKeys("123456");
         LoginBtn.click();
     }
-    
+
 
     @AfterClass
     public static void tear_down(){

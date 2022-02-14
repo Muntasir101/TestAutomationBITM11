@@ -1,3 +1,10 @@
-com\Guru99\LoginTest\UserLoginTest.class
-com\Guru99\NewCustomerTest\NewCustomer.class
+TestNG\AnnotationDemo.class
+TestNG\CrossBrowserTest.class
+TestNG\LoginTest2.class
+TestNG\CrossBrowserTest2.class
 Rough\Mixed.class
+com\Guru99\LoginTest\UserLoginTest.class
+Rough\ListDemo.class
+TestNG\TestBase.class
+com\Guru99\NewCustomerTest\NewCustomer.class
+TestNG\LoginTest.class
